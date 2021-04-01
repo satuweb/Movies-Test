@@ -18,7 +18,7 @@ const configSort = {
     }]
 }
 
-const AllMeetupsPage = props => {
+const AllMoviesPage = props => {
     const { onFetchMovies, loading, movies } = props;
     const [sortBy, setSortBy] = useState(configSort.options[0].value); // default first el
 
@@ -53,4 +53,4 @@ const mapDispatchToProps = dispatch => {
     }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(withErrorHandler(AllMeetupsPage, axios));
+export default connect(mapStateToProps, mapDispatchToProps)(withErrorHandler(AllMoviesPage, axios));
